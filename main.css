@@ -54,6 +54,49 @@ h1 {
   transform: rotate(360deg);
 }
 
+/*birds*/
+
+.bird1 {
+  background-image: url('images/bird1.png');
+  width: 125px;
+  height: 125px;
+  margin-top: -70px;
+}
+
+.birdies {
+  -webkit-animation: 
+    freeBird 10s linear infinite, 
+    upAndDown 1s ease-in-out infinite alternate;
+  -moz-animation: 
+    freeBird 10s linear infinite, 
+    upAndDown 1s ease-in-out infinite alternate;
+  animation: 
+    freeBird 10s linear infinite, 
+    upAndDown 1s ease-in-out infinite alternate;
+  
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+@keyframes freeBird {
+  0% {
+    margin-left: -1000px;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+
+@keyframes upAndDown {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 35px;
+  }
+}
+
 /* band members in the footer with their animation*/
 h3 {
   text-align: center;
@@ -196,7 +239,7 @@ li {
 }
 
 img {
-  display: block;
+  /*display: block;*/
   width: 100%;
   height: auto;
   margin-top: 250px;
@@ -231,39 +274,4 @@ img {
   100% {left: 1190px;}
 }
 
-/*bird*/
 
-.bird1 {
-  background-image: url('images/bird1.png');
-  width: 125px;
-  height: 125px;
-  margin-top: -70px;
-}
-
-.birdies {
-  -webkit-animation: freeBird 10s linear infinite, upAndDown 1s ease-in-out infinite alternate;
-  -moz-animation: freeBird 10s linear infinite, upAndDown 1s ease-in-out infinite alternate;
-  animation: freeBird 10s linear infinite, upAndDown 1s ease-in-out infinite alternate;
-  
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  transform: scale(1);
-}
-
-@keyframes freeBird {
-    0% {
-        margin-left: -1000px;
-    }
-    100% {
-        margin-left: 100%;
-    }
-}
-
-@keyframes upAndDown {
-    0% {
-        margin-top: 0px;
-    }
-    100% {
-        margin-top: 20px;
-    }
-}
