@@ -1,0 +1,269 @@
+/*body background color and animation*/
+
+body {
+  font-family: monospace;
+  background: linear-gradient(240deg, #ff6599, #66CCFF );
+  background-size: 400% 400%;
+  animation: colorChange 10s ease-in-out infinite;
+}
+
+@keyframes colorChange { 
+    0%{background-position:1% 51%}
+    /*25%{background-position:51% 0%}*/
+    50%{background-position:51% 25%}
+    /*75%{background-position:51% 0%}*/
+    100%{background-position:1% 51%}
+}
+
+/*@keyframes animatecolors {
+  0% {
+    background: linear-gradient(to right, red, yellow);
+  }
+  33% {
+    /*background: #3F51B5;*/
+/*    background: linear-gradient(to right, yellow, red);
+  }
+  66% {
+    background: #009688;
+  }
+  100% {
+    background: #F44336;
+  }
+}*/
+
+/*main header with transition*/
+
+h1 {
+  font-size: 43px;
+  padding-top: 20px;
+}
+
+.header {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  text-align: center;
+  -webkit-transition: width 1.4s, height 1.4s, background-color 1.4s, -webkit-transform 1.4s;
+  transition: width 1.4s, height 1.4s, background-color 1.4s, transform 1.4s ease;
+}
+
+.header:hover {
+  background-color: #ff7f00;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/* band members in the footer with their animation*/
+h3 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: monospace;
+  font-size: 20px;
+  color: black;
+}
+
+p {
+  text-align: center;
+}
+
+.band {
+  -webkit-transition: all 0.5s ease-out 0.5s;
+  -moz-transition: all 0.5s ease-out 0.5s;
+  -o-transition: all 0.5s ease-out 0.5s;
+  -ms-transition: all 0.5s ease-out 0.5s;
+  transition: all 0.5s ease-out 0.5s;
+  width: 76px;
+  background-color: #3399FF;
+  height: 160px;
+  bottom:-100px;
+  border-radius: 20px 20px 0 0;
+}
+
+.band:hover {
+  -webkit-transition: all 0.2s ease-out 0s;
+  -ms-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+  cursor: pointer;
+  bottom: -30px;
+}
+
+.band-members {
+  width: 375px;
+  margin: 0 auto;
+}
+
+#kyle, #justin, #jason, #jlee {
+  position: fixed;
+}
+
+#kyle { 
+  background: #007fff;
+}
+
+#justin {
+  margin-left: 100px;
+  background: #ff0000;
+}
+
+#jason {
+  margin-left: 200px;
+  background: #00ff00;
+}
+
+#jlee {
+  margin-left: 300px;
+  background: #ffff00;
+}
+/*.band {
+  position: fixed;
+  width: 100%;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.kyle, .justin, .jlee, .jason {
+  height: 200px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  border-radius: 5%;
+  height: 3em;
+  padding-left: 6em;
+  padding-right: 6em;
+  transition: transform 1s ease, height 1s;
+  transform-origin: top;
+}
+
+.kyle {
+  background: red;
+}
+*/
+/*.kyle:hover, .justin:hover, .jlee:hover, .jason:hover {*/
+/*  height: 200px;*/
+  /*background: pink;
+  transition: height 2s ease, background 2s, transform 2s;*/
+ /* height: 52px;
+  -webkit-transform: scale3d(4, 4, 4);
+  transform: scale3d(5);
+}*/
+
+/*.justin {
+  background: blue;
+}
+
+.jlee {
+  background: yellow;
+}
+
+.jason {
+  background: green;
+}*/
+
+/* beachball row and bounce animation*/
+
+.beachball-holder {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.beachball:hover {
+  /*position: relative;*/
+  animation: bounce .8s .05s infinite linear;
+  transition: .5s scale(0.85);
+}
+
+@keyframes bounce {
+  0% { transform: scale(1.1); opacity: 1 }
+  50% { transform: scale(1.6); opacity: .5 }
+  60% { transform: scale(0.6); opacity: 1 }
+  80% { transform: scale(0.95) }
+  100% { transform: scale(0.85) }
+}
+
+li {
+  display: table-cell;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 250px;
+  position: relative;
+}
+
+/* the bouncing beachball */
+
+.beachball1 {
+  position: relative;
+  animation:  
+    updown 0.9s 0.6s ease-in infinite alternate,
+    leftright 10s 0.5s linear infinite alternate; 
+} 
+
+@keyframes updown {
+  0% {transform: scale(1,1) translateY(-500px);}
+  91% {transform: scale(0.97,1.03) translateY(5px);}
+  100% {transform: scale(1.1, 0.9) translateY(120px);}
+}
+@keyframes leftright {
+  0% {left: -10px;}
+  10% {left: 105px;}
+  20% {left: 230px;}
+  30% {left: 355px;}
+  40% {left: 480px;}
+  50% {left: 605px;}
+  60% {left: 730px;}
+  70% {left: 855px;}
+  80% {left: 980px;}
+  90% {left: 1085px;}
+  100% {left: 1190px;}
+}
+
+/*bird*/
+
+.bird1 {
+  background-image: url('images/bird1.png');
+  width: 125px;
+  height: 125px;
+  margin-top: -70px;
+}
+
+.birdies {
+  -webkit-animation: freeBird 10s linear infinite, upAndDown 1s ease-in-out infinite alternate;
+  -moz-animation: freeBird 10s linear infinite, upAndDown 1s ease-in-out infinite alternate;
+  animation: freeBird 10s linear infinite, upAndDown 1s ease-in-out infinite alternate;
+  
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+@keyframes freeBird {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes upAndDown {
+    0% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: 20px;
+    }
+}
