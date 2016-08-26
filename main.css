@@ -79,7 +79,7 @@ h1 {
 }
 
 .bird2 {
-  background-image: url('images/bird1.png');
+  background-image: url('images/bird2.png');
   width: 125px;
   height: 125px;
   top: -600px;
@@ -128,7 +128,7 @@ h1 {
 }
 
 .bird3 {
-  background-image: url('images/bird1.png');
+  background-image: url('images/bird3.png');
   width: 125px;
   height: 125px;
   top: -700px;
@@ -321,7 +321,7 @@ img {
   /*display: block;*/
   width: 100%;
   height: auto;
-  margin-top: 250px;
+  margin-top: 300px;
   position: relative;
 }
 
