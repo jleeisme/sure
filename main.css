@@ -54,16 +54,16 @@ h1 {
   transform: rotate(360deg);
 }
 
-/*birds*/
+/*birds 1 & 2*/
 
 .bird1 {
   background-image: url('images/bird1.png');
   width: 125px;
   height: 125px;
-  margin-top: -70px;
+  top: -800px;
 }
 
-.birdies {
+.bird1-flight {
   -webkit-animation: 
     freeBird 10s linear infinite, 
     upAndDown 1s ease-in-out infinite alternate;
@@ -73,7 +73,28 @@ h1 {
   animation: 
     freeBird 10s linear infinite, 
     upAndDown 1s ease-in-out infinite alternate;
-  
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+.bird2 {
+  background-image: url('images/bird1.png');
+  width: 125px;
+  height: 125px;
+  top: -600px;
+}
+
+.bird2-flight {
+  -webkit-animation: 
+    freeBird 7s linear infinite, 
+    upAndDown 1s ease-in-out infinite alternate;
+  -moz-animation: 
+    freeBird 7s linear infinite, 
+    upAndDown 1s ease-in-out infinite alternate;
+  animation: 
+    freeBird 7s linear infinite, 
+    upAndDown 1.5s ease-in-out infinite alternate;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   transform: scale(1);
@@ -81,7 +102,7 @@ h1 {
 
 @keyframes freeBird {
   0% {
-    margin-left: -1000px;
+    margin-left: -100px;
   }
   100% {
     margin-left: 100%;
@@ -97,6 +118,64 @@ h1 {
   }
 }
 
+.bird-wrap {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.bird3 {
+  background-image: url('images/bird1.png');
+  width: 125px;
+  height: 125px;
+  top: -700px;
+}
+
+/* bird-3 */
+.bird3-flight {
+  -webkit-animation: 
+    freeBirdThree 8.5s linear infinite, 
+    upDown 1.3s ease-in-out infinite alternate;
+  -moz-animation: 
+    freeBirdThree 8.5s linear infinite, 
+    upDown 1.3s ease-in-out infinite alternate;
+  animation: 
+    freeBirdThree 8.5s linear infinite, 
+    upDown 1.3s ease-in-out infinite alternate;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+@keyframes freeBirdThree {
+  0% {
+    margin-left: 1300px;
+  }
+  100% {
+    margin-left: -20%;
+  }
+}
+
+@keyframes upDown {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 100px;
+  }
+}
+
+.bird-wrap1 {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
 /* band members in the footer with their animation*/
 h3 {
   text-align: center;
