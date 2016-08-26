@@ -1,7 +1,7 @@
 /*body background color and animation*/
 
 body {
-  font-family: monospace;
+  font-family: 'Roboto Mono', monospace;
   background: linear-gradient(240deg, #ff6599, #66CCFF );
   background-size: 400% 400%;
   animation: colorChange 10s ease-in-out infinite;
@@ -59,9 +59,14 @@ h1 {
   transform: rotate(360deg);
 }
 
+/*.palm-wrap {
+  background-color: brown;
+}
 .palm1 {
   background-image: url('images/palm1.png');
-}
+  width: 125px;
+  height: 125px;
+}*/
 
 /*birds 1 & 2*/
 
@@ -189,7 +194,6 @@ h1 {
 h3 {
   text-align: center;
   margin-top: 20px;
-  font-family: monospace;
   font-size: 20px;
   color: black;
 }
