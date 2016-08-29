@@ -1,3 +1,4 @@
+/*************************************/
 /*body background color and animation*/
 
 @font-face {
@@ -20,12 +21,14 @@ body {
   75%{background-position:25% 50%}
   100%{background-position:1% 25%}
 
+/*****************************/
 /*more basic animation change*/
+
     /*0%{background-position:1% 51%}
     50%{background-position:51% 25%}
     100%{background-position:1% 51%}*/
 }
-
+/*****************************/
 /*main header with transition*/
 
 h1 {
@@ -38,7 +41,7 @@ h1 {
   width: 150px;
   height: 150px;
   margin: auto;
-  margin-top: -10px;
+  margin-top: -25px;
   text-align: center;
   -webkit-transition: width 1.4s, height 1.4s, background-color 1.4s, -webkit-transform 1.4s;
   transition: width 1.4s, height 1.4s, background-color 1.4s, transform 1.4s ease;
@@ -101,6 +104,7 @@ h1 {
   bottom: -50px;
 }
 
+/*************/
 /*birds 1 & 2*/
 
 .bird1 {
@@ -181,6 +185,7 @@ h1 {
   top: -700px;
 }
 
+/**********/
 /* bird-3 */
 
 .bird3-flight {
@@ -225,6 +230,7 @@ h1 {
   z-index: -1;
 }
 
+/**************************************************/
 /* band members in the footer with their animation*/
 
 h3 {
@@ -329,6 +335,7 @@ p {
   transform: scale3d(5);
 }*/
 
+/*************************************/
 /* beachball row and bounce animation*/
 
 .beachball-container {
@@ -337,7 +344,6 @@ p {
   margin: 0;
   display: flex;
   justify-content: space-around;
-  /*background-color: gray;*/
 }
 
 .beachball:hover {
@@ -358,6 +364,7 @@ img {
   margin-top: 300px;
 }
 
+/**************************/
 /* the bouncing beachball */
 
 .beachball1 {
@@ -386,6 +393,7 @@ img {
   100% {left: 1020px;}
 }
 
+/*************/
 /* side link */
 
 .bandcamp-link {
@@ -399,7 +407,6 @@ img {
   height: 76px;
   right: -116px;
   top: 45%;
-  /*bottom: 350px;*/
   border-radius: 20px 0 0 20px;
 }
 
