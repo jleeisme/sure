@@ -6,8 +6,6 @@
   src: url('font/tommys.ttf');
 }
 body {
-  /*font-family: 'Roboto Mono', monospace;*/
-  /*font-family: 'Reenie Beanie', cursive;*/
   font-family: "tommys";
   background: linear-gradient(240deg, #ff6599, #66CCFF );
   background-size: 400% 400%;
@@ -406,8 +404,8 @@ img {
   width: 160px;
   background-color: #ff7f00;
   height: 76px;
-  right: -116px;
-  top: 45%;
+  right: -118px;
+  top: 43%;
   border-radius: 20px 0 0 20px;
 }
 
@@ -436,10 +434,20 @@ a {
 
 a:hover {
   color: white;
-
 }
+
+iframe {
+  border: 0; 
+  width: 400px; 
+  height: 120px;
+}
+
 @media (max-width: 790px) {
   .palm-wrap {
+    display: none;
+  }
+
+  .beachball {
     display: none;
   }
 }
