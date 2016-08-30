@@ -2,13 +2,13 @@
 /*body background color and animation*/
 
 @font-face {
-  font-family: "Garble";
-  src: url('font/garble.ttf');
+  font-family: "tommys";
+  src: url('font/tommys.ttf');
 }
 body {
   /*font-family: 'Roboto Mono', monospace;*/
   /*font-family: 'Reenie Beanie', cursive;*/
-  font-family: "Garble";
+  font-family: "tommys";
   background: linear-gradient(240deg, #ff6599, #66CCFF );
   background-size: 400% 400%;
   animation: colorChange 10s ease-in-out infinite;
@@ -28,11 +28,12 @@ body {
     50%{background-position:51% 25%}
     100%{background-position:1% 51%}*/
 }
+
 /*****************************/
 /*main header with transition*/
 
 h1 {
-  font-size: 51px;
+  font-size: 58px;
   padding-top: 20px;
 }
 
@@ -41,7 +42,7 @@ h1 {
   width: 150px;
   height: 150px;
   margin: auto;
-  margin-top: -25px;
+  margin-top: -105px;
   text-align: center;
   -webkit-transition: width 1.4s, height 1.4s, background-color 1.4s, -webkit-transform 1.4s;
   transition: width 1.4s, height 1.4s, background-color 1.4s, transform 1.4s ease;
