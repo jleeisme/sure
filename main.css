@@ -8,7 +8,7 @@
 body {
   font-family: "tommys";
   background: linear-gradient(240deg, #ff6599, #66CCFF );
-  background-size: 700% 700%;
+  background-size: 800% 800%;
   animation: colorChange 10s ease-in-out infinite;
 }
 
