@@ -36,72 +36,32 @@ h1 {
 }
 
 .header {
+  opacity: .8;
+  background-color: #ff7f00;
   border-radius: 50%;
   width: 150px;
   height: 150px;
   margin: auto;
   margin-top: -105px;
   text-align: center;
-  -webkit-transition: width 1.4s, height 1.4s, background-color 1.4s, -webkit-transform 1.4s;
-  transition: width 1.4s, height 1.4s, background-color 1.4s, transform 1.4s ease;
+  /*-webkit-transition: width 1.4s, height 1.4s, background-color 1.4s, -webkit-transform 1.4s;
+  transition: width 1.4s, height 1.4s, background-color 1.4s, transform 1.4s ease;*/
+  box-shadow: 0px 0px 55px 25px #ff7f00;
+  z-index: 2;
+  -webkit-animation: light 5s infinite;
+  -webkit-animation-timing-function: linear;
+  animation: light 5s infinite;
+  animation-timing-function: linear;
 }
 
-.header:hover {
-  background-color: #ff7f00;
+@-webkit-keyframes light {
+  50%{box-shadow: 0px 0px 55px 15px #DFAF2C;}
+}
+
+/*.header:hover {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
-}
-
-.palm-wrap {
-  width: 800px;
-  margin: 0 auto;
-}
-
-.palm1, .palm2 {
-  position: fixed;
-}
-
-.palm1:hover, .palm2:hover {
-  animation: shake 0.9s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
-}
-
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-3px, 0, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(4px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-6px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(6px, 0, 0);
-  }
-}
-
-.palm1 {
-  background-image: url('images/palmtree1.png');
-  width: 300px;
-  height: 419px;
-  /*margin-top: -300px;*/
-  bottom: -50px;
-}
-
-.palm2 {
-  background-image: url('images/palmtree.png');
-  width: 300px;
-  height: 419px;
-  /*margin-top: -300px;*/
-  margin-left: 490px;
-  bottom: -50px;
-}
+}*/
 
 /*************/
 /*birds 1 & 2*/
@@ -174,7 +134,7 @@ h1 {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: -1;
+  /*z-index: -1;*/
 }
 
 .bird3 {
@@ -226,7 +186,60 @@ h1 {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: -1;
+  /*z-index: -1;*/
+}
+
+/*palm trees*/
+
+.palm-wrap {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.palm1, .palm2 {
+  position: fixed;
+}
+
+.palm1:hover, .palm2:hover {
+  animation: shake 0.9s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-3px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-6px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(6px, 0, 0);
+  }
+}
+
+.palm1 {
+  background-image: url('images/palmtree1.png');
+  width: 300px;
+  height: 419px;
+  /*margin-top: -300px;*/
+  bottom: -50px;
+}
+
+.palm2 {
+  background-image: url('images/palmtree.png');
+  width: 300px;
+  height: 419px;
+  /*margin-top: -300px;*/
+  margin-left: 490px;
+  bottom: -50px;
 }
 
 /**************************************************/
@@ -481,7 +494,6 @@ iframe {
   border: 0; 
   width: 400px; 
   height: 120px;
-
 }
 
 /*#nonartarea {
