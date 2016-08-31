@@ -29,6 +29,13 @@ body {
 
 /*****************************/
 /*main header with transition*/
+iframe {
+  border: 0; 
+  width: 400px; 
+  height: 120px;
+  position: relative;
+  z-index: 1000;
+}
 
 h1 {
   font-size: 58px;
@@ -55,6 +62,10 @@ h1 {
 }
 
 @-webkit-keyframes light {
+  50%{box-shadow: 0px 0px 55px 15px #DFAF2C;}
+}
+
+@keyframes light {
   50%{box-shadow: 0px 0px 55px 15px #DFAF2C;}
 }
 
@@ -134,7 +145,7 @@ h1 {
   position: fixed;
   right: 0;
   top: 0;
-  /*z-index: -1;*/
+  /*z-index: 1;*/
 }
 
 .bird3 {
@@ -186,7 +197,7 @@ h1 {
   position: fixed;
   right: 0;
   top: 0;
-  /*z-index: -1;*/
+  /*z-index: 1;*/
 }
 
 /*palm trees*/
@@ -229,7 +240,6 @@ h1 {
   background-image: url('images/palmtree1.png');
   width: 300px;
   height: 419px;
-  /*margin-top: -300px;*/
   bottom: -50px;
 }
 
@@ -237,7 +247,6 @@ h1 {
   background-image: url('images/palmtree.png');
   width: 300px;
   height: 419px;
-  /*margin-top: -300px;*/
   margin-left: 490px;
   bottom: -50px;
 }
@@ -357,6 +366,11 @@ p {
   display: flex;
   justify-content: space-around;
 }*/
+.beachball-container {
+  margin: 0 auto;
+  width: 825px;
+  list-style: none;
+}
 
 #beachball2, #beachball3 {
   position: fixed;
@@ -364,13 +378,6 @@ p {
 
 #beachball2 {
   margin-left: 722px;
-}
-
-.beachball-container {
-  margin: 0 auto;
-  width: 825px;
-  list-style: none;
-  /*bottom: 0;*/
 }
 
 .beachball {
@@ -489,16 +496,6 @@ a {
 a:hover {
   color: white;
 }
-
-iframe {
-  border: 0; 
-  width: 400px; 
-  height: 120px;
-}
-
-/*#nonartarea {
-  background-color: none;
-}*/
 
 @media (max-width: 790px) {
   .palm-wrap {
