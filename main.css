@@ -8,7 +8,7 @@
 body {
   font-family: "tommys";
   background: linear-gradient(240deg, #ff6599, #66CCFF );
-  background-size: 600% 600%;
+  background-size: 700% 700%;
   animation: colorChange 10s ease-in-out infinite;
 }
 
@@ -115,13 +115,13 @@ h1 {
 
 .bird1-flight {
   -webkit-animation: 
-    freeBird 10s linear infinite, 
+    leftToRight 10s linear infinite, 
     upAndDown 1s ease-in-out infinite alternate;
   -moz-animation: 
-    freeBird 10s linear infinite, 
+    leftToRight 10s linear infinite, 
     upAndDown 1s ease-in-out infinite alternate;
   animation: 
-    freeBird 10s linear infinite, 
+    leftToRight 10s linear infinite, 
     upAndDown 1s ease-in-out infinite alternate;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -137,25 +137,25 @@ h1 {
 
 .bird2-flight {
   -webkit-animation: 
-    freeBird 7s linear infinite, 
+    leftToRight 7s linear infinite, 
     upAndDown 1s ease-in-out infinite alternate;
   -moz-animation: 
-    freeBird 7s linear infinite, 
+    leftToRight 7s linear infinite, 
     upAndDown 1s ease-in-out infinite alternate;
   animation: 
-    freeBird 7s linear infinite, 
+    leftToRight 7s linear infinite, 
     upAndDown 1.5s ease-in-out infinite alternate;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   transform: scale(1);
 }
 
-@keyframes freeBird {
+@keyframes leftToRight {
   0% {
-    margin-left: -100px;
+    margin-left: -20%;
   }
   100% {
-    margin-left: 100%;
+    margin-left: 130%;
   }
 }
 
@@ -204,7 +204,7 @@ h1 {
 
 @keyframes freeBirdThree {
   0% {
-    margin-left: 1300px;
+    margin-left: 130%;
   }
   100% {
     margin-left: -20%;
@@ -481,7 +481,12 @@ iframe {
   border: 0; 
   width: 400px; 
   height: 120px;
+
 }
+
+/*#nonartarea {
+  background-color: none;
+}*/
 
 @media (max-width: 790px) {
   .palm-wrap {
