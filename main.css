@@ -58,9 +58,7 @@ h1 {
   margin: auto;
   margin-top: -105px;
   text-align: center;
-  /*-webkit-transition: width 1.4s, height 1.4s, background-color 1.4s, -webkit-transform 1.4s;
-  transition: width 1.4s, height 1.4s, background-color 1.4s, transform 1.4s ease;*/
-  box-shadow: 0px 0px 55px 35px #ff7f00;
+  box-shadow: 0px 5px 55px 35px #ff7f00;
   z-index: 2;
   -webkit-animation: light 6s infinite;
   -webkit-animation-timing-function: linear;
@@ -69,17 +67,12 @@ h1 {
 }
 
 @-webkit-keyframes light {
-  50%{box-shadow: 0px 0px 55px 25px #DFAF2C;}
+  50%{box-shadow: 0px 0px 55px 30px #DFAF2C;}
 }
 
 @keyframes light {
-  50%{box-shadow: 0px 0px 55px 25px #DFAF2C;}
+  50%{box-shadow: 0px 0px 55px 30px #DFAF2C;}
 }
-
-/*.header:hover {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}*/
 
 /*************/
 /*birds 1 & 2*/
@@ -152,7 +145,6 @@ h1 {
   position: fixed;
   right: 0;
   top: 0;
-  /*z-index: 1;*/
 }
 
 .bird3 {
@@ -204,7 +196,6 @@ h1 {
   position: fixed;
   right: 0;
   top: 0;
-  /*z-index: 1;*/
 }
 
 /*palm trees*/
@@ -333,14 +324,6 @@ p {
 /*************************************/
 /* beachball row and bounce animation*/
 
-/*.beachball-container {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-around;
-}*/
-
 .beachball-container {
   margin: 0 auto;
   width: 825px;
@@ -372,12 +355,6 @@ p {
   100% { transform: scale(0.85) }
 }
 
-/*img {
-  height: auto;
-  margin-top: 300%;
-  position: fixed;
-}*/
-
 /**************************/
 /* the bouncing beachball */
 
@@ -388,12 +365,6 @@ p {
     updown 0.9s 0.6s ease-in infinite alternate,
     leftright 7s 0.5s linear infinite alternate; 
 } 
-
-/*@keyframes updown {
-  0% {transform: scale(1,1.1) translateY(-500px);}
-  91% {transform: scale(0.97,1.03) translateY(11px);}
-  100% {transform: scale(1.1, 0.9) translateY(50px);}
-}*/
 
 @keyframes updown {
   0% {transform: scale(1,1.1) translateY(-490%);}
@@ -414,6 +385,15 @@ p {
   90% {left: 84.5%;}
   100% {left: 93%;}
 }
+
+/* older keyframes with px*/
+
+/*@keyframes updown {
+  0% {transform: scale(1,1.1) translateY(-500px);}
+  91% {transform: scale(0.97,1.03) translateY(11px);}
+  100% {transform: scale(1.1, 0.9) translateY(50px);}
+}*/
+
 /*@keyframes leftright {
   0% {left: -172px;}
   10% {left: -55px;}
@@ -431,7 +411,7 @@ p {
 /*************/
 /* side link */
 
-.site-link {
+.side-link {
   -webkit-transition: all 0.5s ease-out 0.5s;
   -moz-transition: all 0.5s ease-out 0.5s;
   -o-transition: all 0.5s ease-out 0.5s;
@@ -445,7 +425,7 @@ p {
   border-radius: 20px 0 0 20px;
 }
 
-.site-link:hover {
+.side-link:hover {
   -webkit-transition: all 0.2s ease-out 0s;
   -ms-transition: all 0.2s ease-out 0s;
   -o-transition: all 0.2s ease-out 0s;
@@ -455,7 +435,7 @@ p {
   right: -30px;
 }
 
-#site-link {
+#side-link {
   position: fixed;
 }
 
@@ -471,6 +451,8 @@ a {
 a:hover {
   color: white;
 }
+
+/* media media media */
 
 @media only screen 
   and (min-device-width: 768px) 
@@ -490,16 +472,3 @@ a:hover {
     display: none;
   }
 }
-
-/*original bounce perimeter*/
-/*0% {left: -10px;}
-  10% {left: 105px;}
-  20% {left: 230px;}
-  30% {left: 355px;}
-  40% {left: 480px;}
-  50% {left: 605px;}
-  60% {left: 730px;}
-  70% {left: 855px;}
-  80% {left: 980px;}
-  90% {left: 1085px;}
-  100% {left: 1185px;}*/
