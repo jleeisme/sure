@@ -8,7 +8,7 @@
 body {
   font-family: "tommys";
   background: linear-gradient(240deg, #ff6599, #66CCFF );
-  background-size: 800% 800%;
+  background-size: 900% 900%;
   animation: colorChange 10s ease-in-out infinite;
 }
 
@@ -18,6 +18,7 @@ body {
   50%{background-position: 50% 25%}
   75%{background-position:25% 50%}
   100%{background-position:1% 25%}
+}
 
 /*****************************/
 /*more basic animation change*/
@@ -25,16 +26,22 @@ body {
     /*0%{background-position:1% 51%}
     50%{background-position:51% 25%}
     100%{background-position:1% 51%}*/
-}
+
 
 /*****************************/
+
 /*main header with transition*/
 iframe {
   border: 0; 
   width: 400px; 
   height: 120px;
   position: relative;
-  z-index: 1000;
+  margin: auto;
+  z-index: 1;
+}
+
+.player {
+  background-color: none;
 }
 
 h1 {
@@ -53,20 +60,20 @@ h1 {
   text-align: center;
   /*-webkit-transition: width 1.4s, height 1.4s, background-color 1.4s, -webkit-transform 1.4s;
   transition: width 1.4s, height 1.4s, background-color 1.4s, transform 1.4s ease;*/
-  box-shadow: 0px 0px 55px 25px #ff7f00;
+  box-shadow: 0px 0px 55px 35px #ff7f00;
   z-index: 2;
-  -webkit-animation: light 5s infinite;
+  -webkit-animation: light 6s infinite;
   -webkit-animation-timing-function: linear;
-  animation: light 5s infinite;
+  animation: light 6s infinite;
   animation-timing-function: linear;
 }
 
 @-webkit-keyframes light {
-  50%{box-shadow: 0px 0px 55px 15px #DFAF2C;}
+  50%{box-shadow: 0px 0px 55px 25px #DFAF2C;}
 }
 
 @keyframes light {
-  50%{box-shadow: 0px 0px 55px 15px #DFAF2C;}
+  50%{box-shadow: 0px 0px 55px 25px #DFAF2C;}
 }
 
 /*.header:hover {
@@ -322,39 +329,6 @@ p {
   margin-left: 300px;
   background: #ffff00;
 }
-/*.band {
-  position: fixed;
-  width: 100%;
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.kyle, .justin, .jlee, .jason {
-  height: 200px;
-  margin: auto;
-  position: relative;
-  text-align: center;
-  border-radius: 5%;
-  height: 3em;
-  padding-left: 6em;
-  padding-right: 6em;
-  transition: transform 1s ease, height 1s;
-  transform-origin: top;
-}
-
-*/
-/*.kyle:hover, .justin:hover, .jlee:hover, .jason:hover {*/
-/*  height: 200px;*/
-  /*background: pink;
-  transition: height 2s ease, background 2s, transform 2s;*/
- /* height: 52px;
-  -webkit-transform: scale3d(4, 4, 4);
-  transform: scale3d(5);
-}*/
 
 /*************************************/
 /* beachball row and bounce animation*/
@@ -366,6 +340,7 @@ p {
   display: flex;
   justify-content: space-around;
 }*/
+
 .beachball-container {
   margin: 0 auto;
   width: 825px;
@@ -456,7 +431,7 @@ p {
 /*************/
 /* side link */
 
-.bandcamp-link {
+.site-link {
   -webkit-transition: all 0.5s ease-out 0.5s;
   -moz-transition: all 0.5s ease-out 0.5s;
   -o-transition: all 0.5s ease-out 0.5s;
@@ -465,12 +440,12 @@ p {
   width: 160px;
   background-color: #ff7f00;
   height: 76px;
-  right: -118px;
+  right: -122px;
   top: 43%;
   border-radius: 20px 0 0 20px;
 }
 
-.bandcamp-link:hover {
+.site-link:hover {
   -webkit-transition: all 0.2s ease-out 0s;
   -ms-transition: all 0.2s ease-out 0s;
   -o-transition: all 0.2s ease-out 0s;
@@ -480,7 +455,7 @@ p {
   right: -30px;
 }
 
-#bandcamp-link {
+#site-link {
   position: fixed;
 }
 
@@ -497,12 +472,21 @@ a:hover {
   color: white;
 }
 
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .beachball1 {
+      display: none;
+    }
+}
+
 @media (max-width: 790px) {
   .palm-wrap {
     display: none;
   }
 
-  .beachball {
+  .beachball, .beachball1, .bird-wrap, .bird-wrap1 {
     display: none;
   }
 }
