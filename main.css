@@ -497,8 +497,7 @@ a:hover {
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 2) {
-    .beachball1,
-    .side-link:hover {
+    .beachball1 {
       display: none;
     }
 }
@@ -543,7 +542,7 @@ a:hover {
       bottom: 0;
     }
 
-    .palm-wrap {
+    /*.palm-wrap {
       width: 300px;
       margin: 0 auto;
     }
@@ -566,5 +565,5 @@ a:hover {
       height: 100px;
       margin-left: 200px;
       bottom: -20px;
-    }
+    }*/
 }
