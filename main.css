@@ -27,39 +27,26 @@ body {
     50%{background-position:51% 25%}
     100%{background-position:1% 51%}*/
 
-
 /*****************************/
 
 /*main header with transition*/
-iframe {
-  border: 0; 
-  width: 400px; 
-  height: 120px;
-  position: relative;
-  margin: auto;
-  z-index: 1;
-}
-
-.player {
-  background-color: none;
-}
 
 h1 {
   font-size: 58px;
   padding-top: 20px;
 }
 
-.header {
+.sun {
   opacity: .8;
   background-color: #ff7f00;
   border-radius: 50%;
   width: 150px;
   height: 150px;
   margin: auto;
-  margin-top: -105px;
+  margin-top: -550px;
   text-align: center;
   box-shadow: 0px 5px 55px 35px #ff7f00;
-  z-index: 2;
+  z-index: 10;
   -webkit-animation: light 6s infinite;
   -webkit-animation-timing-function: linear;
   animation: light 6s infinite;
@@ -74,6 +61,22 @@ h1 {
   50%{box-shadow: 0px 0px 55px 30px #DFAF2C;}
 }
 
+iframe {
+  border: 0; 
+  width: 200px; 
+  height: 200px;
+  position: relative;
+  z-index: 100;
+}
+
+.player{
+  margin: auto;
+  width: 200px; 
+  height: 200px;
+  margin-top: 350px;
+  margin-bottom: 50px;
+  display: table;
+}
 /*************/
 /*birds 1 & 2*/
 
@@ -145,6 +148,7 @@ h1 {
   position: fixed;
   right: 0;
   top: 0;
+  /*z-index: -3;*/
 }
 
 .bird3 {
@@ -196,12 +200,13 @@ h1 {
   position: fixed;
   right: 0;
   top: 0;
+  /*z-index: -5;*/
 }
 
 /*palm trees*/
 
 .palm-wrap {
-  width: 800px;
+  width: 900px;
   margin: 0 auto;
 }
 
@@ -245,7 +250,7 @@ h1 {
   background-image: url('images/palmtree.png');
   width: 300px;
   height: 419px;
-  margin-left: 490px;
+  margin-left: 590px;
   bottom: -50px;
 }
 
@@ -326,7 +331,7 @@ p {
 
 .beachball-container {
   margin: 0 auto;
-  width: 825px;
+  width: 900px;
   list-style: none;
 }
 
@@ -335,7 +340,7 @@ p {
 }
 
 #beachball2 {
-  margin-left: 722px;
+  margin-left: 797px;
 }
 
 .beachball {
@@ -463,12 +468,12 @@ a:hover {
     }
 }
 
-@media (max-width: 790px) {
-  .palm-wrap {
-    display: none;
-  }
-
-  .beachball, .beachball1, .bird-wrap, .bird-wrap1 {
+@media (max-width: 850px) {
+  .palm-wrap, 
+  .beachball, 
+  .beachball1, 
+  .bird-wrap, 
+  .bird-wrap1 {
     display: none;
   }
 }
