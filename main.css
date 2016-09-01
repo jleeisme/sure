@@ -472,6 +472,24 @@ a:hover {
   color: white;
 }
 
+/****************/
+/* hidden links */
+
+.palm-link, 
+.budgie-link,
+.neil-link {
+  text-decoration: none;
+  font-size: 30px;
+  color: transparent;
+}
+
+.palm-link:hover, 
+.budgie-link:hover,
+.neil-link:hover {
+  color: transparent;
+}
+
+/*********************/
 /* media media media */
 
 /* ipad */
@@ -479,7 +497,8 @@ a:hover {
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 2) {
-    .beachball1 {
+    .beachball1,
+    .side-link:hover {
       display: none;
     }
 }
@@ -501,7 +520,9 @@ a:hover {
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .band-members, 
-    .side-tab-link {
+    .side-tab-link,
+    .beachball:hover,
+    .band:hover {
       display: none;
     }
 
@@ -520,5 +541,30 @@ a:hover {
     .player {
       position: fixed;
       bottom: 0;
+    }
+
+    .palm-wrap {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    .palm1, 
+    .palm2 {
+      position: fixed;
+    }
+
+    .palm1 {
+      background-image: url('images/palmtree1.png');
+      width: 75px;
+      height: 100px;
+      bottom: -20px;
+    }
+
+    .palm2 {
+      background-image: url('images/palmtree.png');
+      width: 75px;
+      height: 100px;
+      margin-left: 200px;
+      bottom: -20px;
     }
 }
