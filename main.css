@@ -519,9 +519,7 @@ a:hover {
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .band-members, 
-    .side-tab-link,
-    .beachball:hover,
-    .band:hover {
+    .side-tab-link,{
       display: none;
     }
 
