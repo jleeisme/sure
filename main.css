@@ -8,7 +8,7 @@
 body {
   font-family: "tommys";
   background: linear-gradient(240deg, #ff6599, #66CCFF );
-  background-size: 900% 900%;
+  background-size: 2000% 2000%;
   animation: colorChange 10s ease-in-out infinite;
 }
 
@@ -43,10 +43,9 @@ h1 {
   width: 150px;
   height: 150px;
   margin: auto;
-  margin-top: -550px;
   text-align: center;
   box-shadow: 0px 5px 55px 35px #ff7f00;
-  z-index: 10;
+  /*z-index: 10;*/
   -webkit-animation: light 6s infinite;
   -webkit-animation-timing-function: linear;
   animation: light 6s infinite;
@@ -65,17 +64,18 @@ iframe {
   border: 0; 
   width: 200px; 
   height: 200px;
-  position: relative;
-  z-index: 100;
+  /*position: relative;*/
+  z-index: 0;
 }
 
-.player{
-  margin: auto;
-  width: 200px; 
-  height: 200px;
-  margin-top: 350px;
-  margin-bottom: 50px;
-  display: table;
+.player-wrap{
+  margin: 0 auto;
+  width: 200px;
+}
+
+.player {
+  position: fixed;
+  bottom: 20%;
 }
 /*************/
 /*birds 1 & 2*/
@@ -305,6 +305,7 @@ p {
 
 #kyle, #justin, #jason, #jlee {
   position: fixed;
+  z-index: 1;
 }
 
 #kyle { 
@@ -366,6 +367,7 @@ p {
 .beachball1 {
   bottom: 4%;
   position: fixed;
+  z-index: 1;
   animation:  
     updown 0.9s 0.6s ease-in infinite alternate,
     leftright 7s 0.5s linear infinite alternate; 
@@ -425,7 +427,7 @@ p {
   width: 160px;
   background-color: #ff7f00;
   height: 76px;
-  right: -122px;
+  right: -124px;
   top: 43%;
   border-radius: 20px 0 0 20px;
 }
