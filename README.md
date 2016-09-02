@@ -1,1 +1,1 @@
-## Site for a band I play in. I'm having too much fun making it.
+## Static site for a band I play in. Anything goes in the styling, so no, there are no Bootstrap buttons. I'm having too much fun making it.
