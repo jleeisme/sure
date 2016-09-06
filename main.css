@@ -519,7 +519,7 @@ a:hover {
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .band-members, 
-    .side-tab-link,{
+    .side-tab-link {
       display: none;
     }
 
@@ -539,29 +539,4 @@ a:hover {
       position: fixed;
       bottom: 0;
     }
-
-    /*.palm-wrap {
-      width: 300px;
-      margin: 0 auto;
-    }
-
-    .palm1, 
-    .palm2 {
-      position: fixed;
-    }
-
-    .palm1 {
-      background-image: url('images/palmtree1.png');
-      width: 75px;
-      height: 100px;
-      bottom: -20px;
-    }
-
-    .palm2 {
-      background-image: url('images/palmtree.png');
-      width: 75px;
-      height: 100px;
-      margin-left: 200px;
-      bottom: -20px;
-    }*/
 }
