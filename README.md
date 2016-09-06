@@ -2,4 +2,4 @@
 
 All the fun stuff is on the non-device view.
 
-[Sure](sure.party)
+[Sure](http://sure.party)
