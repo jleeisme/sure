@@ -502,14 +502,59 @@ a:hover {
     }
 }
 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .palm-wrap {
+    margin: 0 auto;
+    width: 600px;
+  }
+
+  .palm2{
+    margin-left: 295px;
+  }
+}
+
 /* general small screen */
 @media (max-width: 850px) {
-  .palm-wrap, 
+  /*.palm-wrap, */
   .beachball, 
   .beachball1, 
   .bird-wrap, 
   .bird-wrap1 {
     display: none;
+  }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 736px) 
+and (orientation : portrait) {
+  .palm-wrap {
+    margin: 0 auto;
+    margin-left: -12px;
+  }
+
+  .palm1 {
+    background-image: url('images/palmtree_small.png');
+    width: 175px;
+    height: 219px;
+    bottom: -50px;
+  }
+
+  .palm2 {
+    background-image: url('images/palmtree_small1.png');
+    width: 175px;
+    height: 219px;
+    bottom: -50px;
+    margin-left: 153px;
+  }
+
+  .palm1,
+  .palm2 {
+    height: 59%;
   }
 }
 
