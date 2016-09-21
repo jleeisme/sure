@@ -494,12 +494,12 @@ a:hover {
 
 /* ipad */
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .beachball1 {
-      display: none;
-    }
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+  .beachball1 {
+    display: none;
+  }
 }
 
 @media only screen 
@@ -528,6 +528,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 }
 
+/* iphone for portrait */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 736px) 
@@ -555,6 +556,36 @@ and (orientation : portrait) {
   .palm1,
   .palm2 {
     height: 59%;
+  }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) {
+  .palm-wrap {
+    margin: 0 auto;
+    /*margin-left: -12px;*/
+  }
+
+  .palm1 {
+    background-image: url('images/palmtree_small.png');
+    width: 175px;
+    height: 219px;
+    /*bottom: -5px;*/
+  }
+
+  .palm2 {
+    background-image: url('images/palmtree_small1.png');
+    width: 175px;
+    height: 219px;
+    /*bottom: -50px;*/
+    margin-left: 375px;
+  }
+
+  .palm1,
+  .palm2 {
+    height: 90%;
   }
 }
 
