@@ -202,6 +202,7 @@ iframe {
   top: 0;
 }
 
+/************/
 /*palm trees*/
 
 .palm-wrap {
@@ -255,7 +256,6 @@ iframe {
     transform: translate3d(6px, 0, 0);
   }
 }
-
 
 /**************************************************/
 /* band members in the footer with their animation*/
@@ -474,16 +474,6 @@ a:hover {
   color: white;
 }
 
-/*.palm-single-img {
-      margin: 0 auto;
-      width: 100%;
-    }
-
-    .palm-united {
-      position: fixed;
-      bottom: 0;
-
-    }*/
 /****************/
 /* hidden links */
 
@@ -504,6 +494,17 @@ a:hover {
 /*********************/
 /* media media media */
 
+/* general small screen */
+@media (max-width: 850px) {
+  .beachball, 
+  .beachball1, 
+  .bird-wrap, 
+  .bird-wrap1,
+  .side-tab-link {
+    display: none;
+  }
+}
+
 /* ipad */
 @media only screen 
   and (min-device-width: 768px) 
@@ -514,48 +515,12 @@ a:hover {
     }
 }
 
-@media only screen
-  and (min-width: 700px)
-  and (max-width: 800px){
-    .palm-wrap {
-      display: none;
-    }
-}
-/* general small screen */
-@media (max-width: 850px) {
-/*  .palm-wrap,*/ 
-  .beachball, 
-  .beachball1, 
-  .bird-wrap, 
-  .bird-wrap1,
-  .side-tab-link {
-    display: none;
-  }
-}
-
-/*@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .palm2 {
-      display: none;
-    }
-
-    .palm1 {
-      background-image: url('images/palmtree_united.png');
-    }
-}*/
-
-/* for the same ppl who watch movies on their phone */
+/* mobile & tablet palms are on the sides of the screen. */
+/* removed the device from the widths so it applies to computer screen scaling */
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 736px)
+  and (min-width: 320px) 
+  and (max-width: 850px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .band-members, 
-    .side-tab-link {
-      display: none;
-    }
-
     .palm-wrap {
       width: 100%;
     }
@@ -576,6 +541,17 @@ a:hover {
       right: -200px;
       bottom: -200px;
     }
+  }
+
+/* for the same ppl who watch movies on their phone */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .band-members, 
+    .side-tab-link {
+      display: none;
+    }
 
     iframe {
       border: 0; 
@@ -593,4 +569,4 @@ a:hover {
       position: fixed;
       bottom: 0;
     }
-}
+  }
