@@ -202,6 +202,7 @@ iframe {
   top: 0;
 }
 
+/************/
 /*palm trees*/
 
 .palm-wrap {
@@ -212,6 +213,22 @@ iframe {
 .palm1, 
 .palm2 {
   position: fixed;
+}
+
+.palm1 {
+  background-image: url('images/palmtree1.png');
+  width: 300px;
+  height: 419px;
+  bottom: -50px;
+}
+
+.palm2 {
+  background-image: url('images/palmtree.png');
+  width: 300px;
+  height: 419px;
+  margin-left: 590px;
+  margin-right: 0;
+  bottom: -50px;
 }
 
 .palm1:hover, 
@@ -238,21 +255,6 @@ iframe {
   40%, 60% {
     transform: translate3d(6px, 0, 0);
   }
-}
-
-.palm1 {
-  background-image: url('images/palmtree1.png');
-  width: 300px;
-  height: 419px;
-  bottom: -50px;
-}
-
-.palm2 {
-  background-image: url('images/palmtree.png');
-  width: 300px;
-  height: 419px;
-  margin-left: 590px;
-  bottom: -50px;
 }
 
 /**************************************************/
@@ -492,6 +494,17 @@ a:hover {
 /*********************/
 /* media media media */
 
+/* general small screen */
+@media (max-width: 850px) {
+  .beachball, 
+  .beachball1, 
+  .bird-wrap, 
+  .bird-wrap1,
+  .side-tab-link {
+    display: none;
+  }
+}
+
 /* ipad */
 @media only screen 
   and (min-device-width: 768px) 
@@ -502,16 +515,33 @@ a:hover {
     }
 }
 
-/* general small screen */
-@media (max-width: 850px) {
-  .palm-wrap, 
-  .beachball, 
-  .beachball1, 
-  .bird-wrap, 
-  .bird-wrap1 {
-    display: none;
+/* mobile & tablet palms are on the sides of the screen. */
+/* removed the device from the widths so it applies to computer screen scaling */
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 850px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .palm-wrap {
+      width: 100%;
+    }
+
+    .palm1,
+    .palm2 {
+      background-repeat: no-repeat;
+    }
+
+    .palm1 {
+      background-image: url('images/palmtree_small.png');
+      left: -75px;
+      bottom: -200px;
+    }
+
+    .palm2 {
+      background-image: url('images/palmtree_small1.png');
+      right: -200px;
+      bottom: -200px;
+    }
   }
-}
 
 /* for the same ppl who watch movies on their phone */
 @media only screen 
@@ -539,4 +569,4 @@ a:hover {
       position: fixed;
       bottom: 0;
     }
-}
+  }
