@@ -528,40 +528,74 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 }
 
-/* iphone for portrait */
+/* iphone 6 for portrait */
 @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 736px) 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (-webkit-min-device-pixel-ratio: 2)
 and (orientation : portrait) {
   .palm-wrap {
     margin: 0 auto;
-    margin-left: -12px;
+    /*margin-left: -12px;*/
   }
 
   .palm1 {
     background-image: url('images/palmtree_small.png');
     width: 175px;
     height: 219px;
-    bottom: -50px;
+    /*bottom: -50px;*/
   }
 
   .palm2 {
     background-image: url('images/palmtree_small1.png');
     width: 175px;
     height: 219px;
-    bottom: -50px;
-    margin-left: 153px;
+    /*bottom: -50px;*/
+    margin-left:49%;
   }
 
   .palm1,
   .palm2 {
-    height: 59%;
+    height: 50%;
   }
 }
 
+/* iphone 5 portrait*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  .palm-wrap {
+    margin: 0 auto;
+    /*margin-left: -12px;*/
+  }
+
+  .palm1 {
+    background-image: url('images/palmtree_small.png');
+    width: 175px;
+    height: 219px;
+    bottom: -20%;
+  }
+
+  .palm2 {
+    background-image: url('images/palmtree_small1.png');
+    width: 175px;
+    height: 219px;
+    bottom: -20%;
+    margin-left: 49%;
+  }
+
+  .palm1,
+  .palm2 {
+    height: 60%;
+  }
+}
+
+/* iphone 5 landscape */
 @media only screen 
 and (min-device-width : 320px) 
-and (max-device-width : 736px) 
+and (max-device-width : 568px) 
 and (orientation : landscape) {
   .palm-wrap {
     margin: 0 auto;
