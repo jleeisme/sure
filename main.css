@@ -214,6 +214,22 @@ iframe {
   position: fixed;
 }
 
+.palm1 {
+  background-image: url('images/palmtree1.png');
+  width: 300px;
+  height: 419px;
+  bottom: -50px;
+}
+
+.palm2 {
+  background-image: url('images/palmtree.png');
+  width: 300px;
+  height: 419px;
+  margin-left: 590px;
+  margin-right: 0;
+  bottom: -50px;
+}
+
 .palm1:hover, 
 .palm2:hover {
   animation: shake 0.9s cubic-bezier(.36,.07,.19,.97) both;
@@ -240,20 +256,6 @@ iframe {
   }
 }
 
-.palm1 {
-  background-image: url('images/palmtree1.png');
-  width: 300px;
-  height: 419px;
-  bottom: -50px;
-}
-
-.palm2 {
-  background-image: url('images/palmtree.png');
-  width: 300px;
-  height: 419px;
-  margin-left: 590px;
-  bottom: -50px;
-}
 
 /**************************************************/
 /* band members in the footer with their animation*/
@@ -472,6 +474,16 @@ a:hover {
   color: white;
 }
 
+/*.palm-single-img {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .palm-united {
+      position: fixed;
+      bottom: 0;
+
+    }*/
 /****************/
 /* hidden links */
 
@@ -502,16 +514,37 @@ a:hover {
     }
 }
 
+@media only screen
+  and (min-width: 700px)
+  and (max-width: 800px){
+    .palm-wrap {
+      display: none;
+    }
+}
 /* general small screen */
 @media (max-width: 850px) {
-  .palm-wrap, 
+/*  .palm-wrap,*/ 
   .beachball, 
   .beachball1, 
   .bird-wrap, 
-  .bird-wrap1 {
+  .bird-wrap1,
+  .side-tab-link {
     display: none;
   }
 }
+
+/*@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .palm2 {
+      display: none;
+    }
+
+    .palm1 {
+      background-image: url('images/palmtree_united.png');
+    }
+}*/
 
 /* for the same ppl who watch movies on their phone */
 @media only screen 
@@ -521,6 +554,27 @@ a:hover {
     .band-members, 
     .side-tab-link {
       display: none;
+    }
+
+    .palm-wrap {
+      width: 100%;
+    }
+
+    .palm1,
+    .palm2 {
+      background-repeat: no-repeat;
+    }
+
+    .palm1 {
+      background-image: url('images/palmtree_small.png');
+      left: -75px;
+      bottom: -200px;
+    }
+
+    .palm2 {
+      background-image: url('images/palmtree_small1.png');
+      right: -200px;
+      bottom: -200px;
     }
 
     iframe {
