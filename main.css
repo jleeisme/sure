@@ -13,11 +13,11 @@ body {
 }
 
 @keyframes colorChange { 
-  0%{background-position:1% 25%}
-  25%{background-position:25% 1%}
-  50%{background-position: 50% 25%}
-  75%{background-position:25% 50%}
-  100%{background-position:1% 25%}
+  0% {background-position:1% 25%}
+  25% {background-position:25% 1%}
+  50% {background-position: 50% 25%}
+  75% {background-position:25% 50%}
+  100% {background-position:1% 25%}
 }
 
 /*****************************/
@@ -331,6 +331,27 @@ p {
 #jlee {
   margin-left: 300px;
   background: #ffff00;
+}
+
+.popup {
+  background-image: url('images/kyle.jpeg');
+  width: 100px;
+  height: 100px;
+  left: 45.5%;
+  position: fixed;
+  bottom: 100px;
+  border-left: 3px solid #007fff;
+  border-top: 3px solid #ff0000;
+  border-right: 3px solid #00ff00;
+  border-bottom: 3px solid #ffff00;
+  transition: opacity 200ms;
+  /*visibility: hidden;*/
+  opacity: 0;
+}
+
+.showKyle {
+  /*visibility: visible;*/
+  opacity: 1;
 }
 
 /*************************************/
