@@ -337,9 +337,10 @@ p {
   background-image: url('images/kyle.jpeg');
   width: 100px;
   height: 100px;
-  left: 45.5%;
-  position: fixed;
-  bottom: 100px;
+  /*left: 45.5%;*/
+  position: relative;
+  margin: 0 auto;
+  bottom: -15px;
   border-left: 3px solid #007fff;
   border-top: 3px solid #ff0000;
   border-right: 3px solid #00ff00;
@@ -347,6 +348,7 @@ p {
   transition: opacity 200ms;
   /*visibility: hidden;*/
   opacity: 0;
+  z-index: 1000;
 }
 
 .showKyle {
