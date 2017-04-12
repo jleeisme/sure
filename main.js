@@ -5,7 +5,7 @@
 // }, false);
 
 $(function() {
-  $('.kylePopup').on('click', () => {
-    $('.popup').toggleClass('showKyle');
+  $('.kyle-popup').on('click', () => {
+    $('.popup').toggleClass('show-kyle');
   });
 });
