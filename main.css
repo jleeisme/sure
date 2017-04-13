@@ -340,7 +340,6 @@ p {
   background-image: url('images/kyle.jpeg');
   width: 110px;
   height: 110px;
-  /*left: 45.5%;*/
   position: relative;
   margin: 0 auto;
   bottom: -15px;
@@ -348,16 +347,43 @@ p {
   border-top: 3px solid #ff0000;
   border-right: 3px solid #00ff00;
   border-bottom: 3px solid #ffff00;
-  transition: opacity 200ms;
-  /*visibility: hidden;*/
+  transition: opacity 0.6s;
   opacity: 0;
   z-index: 0;
+  box-shadow: 0px 0px 90px 20px #ffff00;
+  border-radius: 50%;
+  animation: big-light 3s infinite;
 }
 
-.show-kyle {
-  /*visibility: visible;*/
-  opacity: 1;
+
+@keyframes big-light {
+  /*0% {box-shadow: 0px 0px 20px 30px #ffff00;}*/
+  50% {box-shadow: 0px 0px 90px 42px #ffff00;}
+  /*100% {box-shadow: 0px 0px 100px 40px #ffff00;}*/
 }
+
+.kyle-face {
+  /*content: url('images/kyle.jpeg');*/
+  width: 100px;
+  height: 100px;
+  border-left: 3px solid #007fff;
+  border-top: 3px solid #ff0000;
+  border-right: 3px solid #00ff00;
+  border-bottom: 3px solid #ffff00;
+  border-radius: 50%;
+  transition: 0.2s linear;
+  /*opacity: 0; */
+}
+
+/*.spin {
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}*/
+
+/*@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }*/
 
 /*************************************/
 /* beachball row and bounce animation*/
@@ -402,10 +428,21 @@ p {
   bottom: 4%;
   position: fixed;
   z-index: 3;
+  /*opacity: 1;*/
+  /*transition: opacity 1s;*/
   animation:  
     updown 0.9s 0.6s ease-in infinite alternate,
     leftright 7s 0.5s linear infinite alternate;
 } 
+
+.visible {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+/*.invisible {
+  opacity: 0;
+}*/
 
 @keyframes updown {
   0% {transform: scale(1,1.1) translateY(-490%);}
